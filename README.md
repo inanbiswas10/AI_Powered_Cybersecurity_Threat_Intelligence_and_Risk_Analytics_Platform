@@ -1,7 +1,8 @@
-# 🛡️ AegisAI ThreatLens v4.2
+# 🛡️ Aegis-AI Threat Analytics Platform v4.2
 
 ### Autonomous AI-Powered Cybersecurity Threat Intelligence & Risk Analytics Platform
 
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Streamlit%20Cloud-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://aegis-ai-threat-analytics-platform.streamlit.app)
 [![Python Version](https://img.shields.io/badge/python-3.11%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
 [![Machine Learning](https://img.shields.io/badge/XGBoost%20%7C%20Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
@@ -11,9 +12,16 @@
 
 ---
 
+## 🌐 Live Interactive SOC Deployment
+
+Experience the live, autonomous threat intelligence command center running in real time:  
+👉 **[Launch AegisAI ThreatLens Command Center](https://aegis-ai-threat-analytics-platform.streamlit.app)**
+
+---
+
 ## 📌 Executive Summary & Project Overview
 
-**AegisAI ThreatLens v4.2** is an enterprise-grade, high-density Security Operations Center (SOC) intelligence dashboard and autonomous containment engine. Engineered entirely in modern, strictly type-hinted **Python 3.11+**, ThreatLens equips cyber defense analysts, incident responders and CISOs with real-time wire packet inspection, unsupervised zero-day anomaly triage, MITRE ATTACK kill-chain mapping, dynamic SIGMA rule generation, and sub-second SOAR response playbooks.
+**AegisAI ThreatLens v4.2** is an enterprise grade, high-density Security Operations Center (SOC) intelligence dashboard and autonomous containment engine. Engineered entirely in modern, strictly type-hinted **Python 3.11+**, ThreatLens equips cyber defense analysts, incident responders and CISOs with real-time wire packet inspection, unsupervised zero day anomaly triage, MITRE ATT&CK kill chain mapping, dynamic SIGMA rule generation and sub-second SOAR response playbooks.
 
 Built specifically for high-impact internship portfolio demonstrations, academic defenses and containerized deployment across **Streamlit Community Cloud**, **Docker**, and cloud environments.
 
@@ -43,6 +51,7 @@ Built specifically for high-impact internship portfolio demonstrations, academic
 ├── soar_playbooks.py       # Autonomous containment playbooks & automated SIGMA rule generator
 ├── utils.py                # Shannon entropy calculation, SHA-256 IOC hashing & SecOps logging
 ├── requirements.txt        # Pinned production dependencies for deterministic builds
+├── LICENSE                 # MIT Enterprise Open-Source License
 └── README.md               # Comprehensive platform documentation & deployment guide
 ```
 
@@ -60,7 +69,6 @@ Built specifically for high-impact internship portfolio demonstrations, academic
 
 ```powershell
 # Windows PowerShell
-
 cd "D:\Computer Science (Python Projects)\02_Predictive_ML"
 ```
 ```bash
@@ -77,7 +85,6 @@ cd path/to/02_Predictive_ML
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
-*(Note: If PowerShell displays a script execution policy notice, run: `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` and re-run `.venv\Scripts\Activate.ps1`)*
 
 ```bash
 # Linux / macOS
@@ -93,12 +100,12 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Launch the SOC Command Center
+### 4. Launch the SOC Command Center Locally
 
 ```bash
 streamlit run app.py
 ```
-> 🌐 The AegisAI ThreatLens dashboard will automatically launch in your default browser at **`http://localhost:8501`**.
+> 🌐 The Aegis-AI Threat Analytics Platform dashboard will automatically launch in your default browser at **`http://localhost:8501`**.
 
 ---
 
@@ -106,14 +113,14 @@ streamlit run app.py
 
 ### 1. 🛡️ Live SOC Command Center
 
-- **DEFCON Readiness Status HUD**: Real-time synapse latency monitor, active ingress vector, and blocked packet counter.
-- **Sensor Telemetry Metrics**: Global Threat Level index (0-100), AI precision rate (99.4%), and Autonomous MTTR (1.8 min).
-- **Wire Ingress Stream**: Live packet log displaying Source IP, Port, MITRE ATT&CK technique IDs (e.g., `T1110.001`, `T1071.001`), AI confidence scores, and action verdicts.
+- **DEFCON Readiness Status HUD**: Real-time synapse latency monitor, active ingress vector and blocked packet counter.
+- **Sensor Telemetry Metrics**: Global Threat Level index (0-100), AI precision rate (99.4 %) and Autonomous MTTR (1.8 min).
+- **Wire Ingress Stream**: Live packet log displaying Source IP, Port, MITRE ATT&CK technique IDs (e.g., `T1110.001`, `T1071.001`), AI confidence scores and action verdicts.
 
 ### 2. 🧠 AI Risk Analytics & Predictive ML Engine
 
 - **XGBoost Classifier Telemetry**: Real-time evaluation of compromise likelihood, feature attribution, and inference latency benchmarks.
-- **Monte Carlo Cyber Loss Projection**: Quantitative risk forecasting calculating Value-at-Risk (95% VaR: ~$4.20M USD) and Annualized Loss Expectancy (ALE) savings via automated isolation.
+- **Monte Carlo Cyber Loss Projection**: Quantitative risk forecasting calculating Value-at-Risk (95% VaR: ~$4.20 M USD) and Annualized Loss Expectancy (ALE) savings via automated isolation.
 
 ### 3. 🎯 Threat Actors & CVE Matrix
 
@@ -122,7 +129,19 @@ streamlit run app.py
 
 ### 4. ⚡ SOAR Automation & Containment
 
-- **Zero-Touch Remediation**: Live simulation of network boundary isolation, VPC security group revocation, and dynamic SIGMA rule generation ready for SIEM ingestion (Splunk, Elastic, Sentinel).
+- **Zero-Touch Remediation**: Live simulation of network boundary isolation, VPC security group revocation and dynamic SIGMA rule generation ready for SIEM ingestion (Splunk, Elastic, Sentinel).
+
+---
+
+## ☁️ Live Cloud Deployment (Streamlit Community Cloud)
+
+This platform is deployed 24/7 on **Streamlit Community Cloud**:
+- **Live Production URL**: [https://aegis-ai-threat-analytics-platform.streamlit.app](https://aegis-ai-threat-analytics-platform.streamlit.app)
+- **Deployment Branch**: `main`
+- **Entrypoint**: `app.py`
+- **Runtime Environment**: Python 3.11 with containerized wheel resolution for XGBoost and Plotly.
+
+---
 
 ## 🧪 Security Standards & Code Quality
 
@@ -134,7 +153,7 @@ streamlit run app.py
 
 ## 📜 License
 
-Distributed under the **MIT Enterprise License**. Feel free to adapt and build upon this platform for academic, research and non-commercial security operations.
+Distributed under the **MIT Enterprise License**. Feel free to adapt and build upon this platform for academic, research, and non-commercial security operations.
 
 ---
 
