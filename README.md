@@ -21,7 +21,7 @@ Experience the live, autonomous threat intelligence command center running in re
 
 ## 📌 Executive Summary & Project Overview
 
-**AegisAI ThreatLens v4.2** is an enterprise grade, high-density Security Operations Center (SOC) intelligence dashboard and autonomous containment engine. Engineered entirely in modern, strictly type-hinted **Python 3.11+**, ThreatLens equips cyber defense analysts, incident responders and CISOs with real-time wire packet inspection, unsupervised zero day anomaly triage, MITRE ATT&CK kill chain mapping, dynamic SIGMA rule generation and sub-second SOAR response playbooks.
+**Aegis-AI Threat Analytics Platform v4.2** is an enterprise grade, high-density Security Operations Center (SOC) intelligence dashboard and autonomous containment engine. Engineered entirely in modern, strictly type-hinted **Python 3.11+**, it equips cyber defense analysts, incident responders and CISOs with real-time wire packet inspection, unsupervised zero day anomaly triage, MITRE ATT&CK kill chain mapping, dynamic SIGMA rule generation and sub-second SOAR response playbooks.
 
 Built specifically for high-impact internship portfolio demonstrations, academic defenses and containerized deployment across **Streamlit Community Cloud**, **Docker**, and cloud environments.
 
