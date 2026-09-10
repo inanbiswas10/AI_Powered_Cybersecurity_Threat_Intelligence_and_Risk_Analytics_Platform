@@ -21,9 +21,9 @@ Experience the live, autonomous threat intelligence command center running in re
 
 ## 📌 Executive Summary & Project Overview
 
-**Aegis-AI Threat Analytics Platform v4.2** is an enterprise grade, high-density Security Operations Center (SOC) intelligence dashboard and autonomous containment engine. Engineered entirely in modern, strictly type-hinted **Python 3.11+**, it equips cyber defense analysts, incident responders and CISOs with real-time wire packet inspection, unsupervised zero day anomaly triage, MITRE ATT&CK kill chain mapping, dynamic SIGMA rule generation and sub-second SOAR response playbooks.
+**Aegis-AI Threat Analytics Platform v4.2** is an enterprise grade, high-density Security Operations Center (SOC) intelligence dashboard and autonomous containment engine. Engineered entirely in modern, strictly type hinted **Python 3.11+**, it equips cyber defense analysts, incident responders and CISOs with real time wire packet inspection, unsupervised zero day anomaly triage, MITRE ATT&CK kill chain mapping, dynamic SIGMA rule generation and sub second SOAR response playbooks.
 
-Built specifically for high-impact internship portfolio demonstrations, academic defenses and containerized deployment across **Streamlit Community Cloud**, **Docker**, and cloud environments.
+Built specifically for high impact internship portfolio demonstrations, academic defenses and containerized deployment across **Streamlit Community Cloud**, **Docker** and cloud environments.
 
 ---
 
@@ -31,12 +31,12 @@ Built specifically for high-impact internship portfolio demonstrations, academic
 
 | Capability | Module | Technical Description |
 | :--- | :--- | :--- |
-| **⚡ Real-Time eBPF Wire Ingress Stream** | `app.py` | Live telemetry inspection tracking source IP/ASN, ingress vectors, target ports (SSH, HTTPS, Kube-API), and automated mitigation (`BLOCKED`, `DROPPED`, `ISOLATED`). |
-| **🧠 Dual-Stage Machine Learning Pipeline** | `ml_engine.py` | • **Unsupervised Zero-Day Detection**: Isolation Forest anomaly scoring calibrated on network distribution baselines.<br>• **Supervised Attribution**: XGBoost classifier assessing compromise probability with sub-15ms inference latency. |
-| **🔬 Shannon Byte Entropy Triage** | `utils.py` | Mathematical entropy calculations on raw network bytes ($H(X) > 7.5$) to flag packed binaries, polymorphic loaders, encrypted C2 streams, and rootkit obfuscation. |
-| **🌐 Asynchronous OSINT & CTI Ingestion** | `data_collector.py` | Concurrent ingestion via `aiohttp` for CISA Known Exploited Vulnerabilities (KEV), AlienVault OTX, and multi-vendor consensus reputation engines. |
-| **⚡ Zero-Touch SOAR Containment** | `soar_playbooks.py` | Microsecond incident response routines simulating AWS Boto3 VPC security group ingress revocation, STS token invalidation, and automated perimeter STIX 2.1 dissemination. |
-| **📊 Stochastic Cyber Risk Modeling** | `ml_engine.py` | 10,000-iteration Monte Carlo simulations computing 95% Value-at-Risk (VaR) and Annualized Loss Expectancy (ALE) for executive risk reporting. |
+| **⚡ Real-Time eBPF Wire Ingress Stream** | `app.py` | Live telemetry inspection tracking source IP/ASN, ingress vectors, target ports (SSH, HTTPS, Kube-API) and automated mitigation (`BLOCKED`, `DROPPED`, `ISOLATED`). |
+| **🧠 Dual-Stage Machine Learning Pipeline** | `ml_engine.py` | • **Unsupervised Zero-Day Detection**: Isolation Forest anomaly scoring calibrated on network distribution baselines.<br>• **Supervised Attribution**: XGBoost classifier assessing compromise probability with sub 15 ms inference latency. |
+| **🔬 Shannon Byte Entropy Triage** | `utils.py` | Mathematical entropy calculations on raw network bytes ($H(X) > 7.5$) to flag packed binaries, polymorphic loaders, encrypted C2 streams and rootkit obfuscation. |
+| **🌐 Asynchronous OSINT & CTI Ingestion** | `data_collector.py` | Concurrent ingestion via `aiohttp` for CISA Known Exploited Vulnerabilities (KEV), AlienVault OTX and multi vendor consensus reputation engines. |
+| **⚡ Zero-Touch SOAR Containment** | `soar_playbooks.py` | Microsecond incident response routines simulating AWS Boto3 VPC security group ingress revocation, STS token invalidation and automated perimeter STIX 2.1 dissemination. |
+| **📊 Stochastic Cyber Risk Modeling** | `ml_engine.py` | 10,000 iteration Monte Carlo simulations computing 95 % Value-at-Risk (VaR) and Annualized Loss Expectancy (ALE) for executive risk reporting. |
 
 ---
 
@@ -62,7 +62,7 @@ Built specifically for high-impact internship portfolio demonstrations, academic
 ### Prerequisites
 
 - **Python**: Version `3.11` or `3.12`
-- **Operating System**: Windows (PowerShell), macOS, or Linux
+- **Operating System**: Windows (PowerShell), macOS or Linux
 - **Git** (recommended for version control)
 
 ### 1. Navigate to Project Directory
@@ -113,18 +113,18 @@ streamlit run app.py
 
 ### 1. 🛡️ Live SOC Command Center
 
-- **DEFCON Readiness Status HUD**: Real-time synapse latency monitor, active ingress vector and blocked packet counter.
+- **DEFCON Readiness Status HUD**: Real time synapse latency monitor, active ingress vector and blocked packet counter.
 - **Sensor Telemetry Metrics**: Global Threat Level index (0-100), AI precision rate (99.4 %) and Autonomous MTTR (1.8 min).
 - **Wire Ingress Stream**: Live packet log displaying Source IP, Port, MITRE ATT&CK technique IDs (e.g., `T1110.001`, `T1071.001`), AI confidence scores and action verdicts.
 
 ### 2. 🧠 AI Risk Analytics & Predictive ML Engine
 
-- **XGBoost Classifier Telemetry**: Real-time evaluation of compromise likelihood, feature attribution, and inference latency benchmarks.
-- **Monte Carlo Cyber Loss Projection**: Quantitative risk forecasting calculating Value-at-Risk (95% VaR: ~$4.20 M USD) and Annualized Loss Expectancy (ALE) savings via automated isolation.
+- **XGBoost Classifier Telemetry**: Real time evaluation of compromise likelihood, feature attribution and inference latency benchmarks.
+- **Monte Carlo Cyber Loss Projection**: Quantitative risk forecasting calculating Value-at-Risk (95 % VaR: ~$4.20 M USD) and Annualized Loss Expectancy (ALE) savings via automated isolation.
 
 ### 3. 🎯 Threat Actors & CVE Matrix
 
-- **IOC Sandbox Lookup**: Multi-vendor reputation synthesis (VirusTotal, AlienVault OTX, Shodan, AbuseIPDB).
+- **IOC Sandbox Lookup**: Multi vendor reputation synthesis (VirusTotal, AlienVault OTX, Shodan, AbuseIPDB).
 - **APT Dossiers**: Correlation mapping against known threat groups (Volt Typhoon, Lazarus Group, APT29 Cozy Bear).
 
 ### 4. ⚡ SOAR Automation & Containment
@@ -145,7 +145,7 @@ This platform is deployed 24/7 on **Streamlit Community Cloud**:
 
 ## 🧪 Security Standards & Code Quality
 
-- **Zero-Leak Design**: Configuration variables, API endpoints, and DEFCON parameters isolated via `pydantic-settings` (`config.py`).
+- **Zero-Leak Design**: Configuration variables, API endpoints and DEFCON parameters isolated via `pydantic-settings` (`config.py`).
 - **Cryptographic Auditing**: Deterministic SHA-256 IOC hashing for immutable evidentiary integrity.
 - **Static Type Safety**: Standardized on Python 3.11 type hints across all core modules.
 
@@ -153,7 +153,7 @@ This platform is deployed 24/7 on **Streamlit Community Cloud**:
 
 ## 📜 License
 
-Distributed under the **MIT Enterprise License**. Feel free to adapt and build upon this platform for academic, research, and non-commercial security operations.
+Distributed under the **MIT Enterprise License**. Feel free to adapt and build upon this platform for academic, research and non commercial security operations.
 
 ---
 
