@@ -15,7 +15,7 @@
 ## 🌐 Live Interactive SOC Deployment
 
 Experience the live, autonomous threat intelligence command center running in real time:  
-👉 **[Launch AegisAI ThreatLens Command Center](https://aegis-ai-threat-analytics-platform.streamlit.app)**
+👉 **[Launch AegisAI ThreatLens Command Center](https://aegis-ai-threat-analytics-platform.streamlit.app/)**
 
 ---
 
@@ -136,7 +136,7 @@ streamlit run app.py
 ## ☁️ Live Cloud Deployment (Streamlit Community Cloud)
 
 This platform is deployed 24/7 on **Streamlit Community Cloud**:
-- **Live Production URL**: [https://aegis-ai-threat-analytics-platform.streamlit.app](https://aegis-ai-threat-analytics-platform.streamlit.app)
+- **Live Production URL**: [https://aegis-ai-threat-analytics-platform.streamlit.app](https://aegis-ai-threat-analytics-platform.streamlit.app/)
 - **Deployment Branch**: `main`
 - **Entrypoint**: `app.py`
 - **Runtime Environment**: Python 3.11 with containerized wheel resolution for XGBoost and Plotly.
