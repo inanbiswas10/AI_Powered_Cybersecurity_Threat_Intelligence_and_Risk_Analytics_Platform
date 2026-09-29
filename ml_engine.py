@@ -1,5 +1,5 @@
-# AegisAI ThreatLens - Machine Learning Inference & Anomaly Classification Engine
-# Combines Scikit-Learn Isolation Forest and XGBoost for real-time packet & risk scoring.
+# Aegis AI - Threat Analytics Platform - Machine Learning Inference & Anomaly Classification Engine
+# Combines Scikit-Learn Isolation Forest and XGBoost for real-time packet & risk scoring
 
 import numpy as np
 import pandas as pd
@@ -14,7 +14,7 @@ logger = setup_logger ("aegis.ml_engine")
 
 class ThreatInferenceEngine:
 
-    # Production ML pipeline for behavioral threat classification and zero-day anomaly triage.
+    # Production ML pipeline for behavioral threat classification and zero-day anomaly triage
 
     def __init__ (self):
         self.anomaly_detector = IsolationForest (
@@ -32,7 +32,7 @@ class ThreatInferenceEngine:
 
     def _initialize_baseline_weights (self):
 
-        # Fit baseline normal network and attack distributions.
+        # Fit baseline normal network and attack distributions
 
         X_mock = np.random.normal (loc = 0.5,scale = 0.15,size = (1000,8))
         y_mock = np.random.choice ([0,1],size = (1000,),p = [0.92,0.08])
@@ -42,7 +42,7 @@ class ThreatInferenceEngine:
 
     def evaluate_packet_vector (self,features: np.ndarray) -> Dict [str,Any]:
 
-        # Evaluate raw feature vector. Returns anomaly decision and XGBoost probability.
+        # Evaluate raw feature vector. Returns anomaly decision and XGBoost probability
 
         if features.ndim == 1:
             features = features.reshape (1,-1)
@@ -61,7 +61,7 @@ class ThreatInferenceEngine:
 
     def compute_monte_carlo_loss (self,iterations: int = 10000) -> Dict [str,float]:
 
-        # Compute stochastic cyber loss projection and Value-at-Risk (VaR).
+        # Compute stochastic cyber loss projection and Value-at-Risk (VaR)
 
         loss_samples = np.random.lognormal (mean = 12.5,sigma = 1.2,size = iterations)
         var_95 = float (np.percentile (loss_samples,95))
