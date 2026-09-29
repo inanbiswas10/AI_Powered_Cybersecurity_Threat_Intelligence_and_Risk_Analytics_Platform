@@ -1,5 +1,5 @@
-# AegisAI ThreatLens - Autonomous SOAR Playbooks & Containment Automation
-# Executes hypervisor isolation, AWS Boto3 security group revocation and firewall quarantines.
+# Aegis AI - Threat Analytics Platform - Autonomous SOAR Playbooks & Containment Automation
+# Executes hypervisor isolation, AWS Boto3 security group revocation and firewall quarantines
 
 import time
 import logging
@@ -10,7 +10,7 @@ logger = logging.getLogger ("aegis.soar")
 
 class SOARContainmentHandler:
 
-    # Zero-touch automated containment handler executing security playbooks."""
+    # Zero-touch automated containment handler executing security playbooks
 
     def __init__ (self):
         self.sla_threshold = settings.CONTAINMENT_SLA_SECONDS
@@ -18,7 +18,7 @@ class SOARContainmentHandler:
 
     def trigger_quarantine (self,threat_ip: str) -> Dict [str,Any]:
 
-        # Execute instantaneous hypervisor and network boundary quarantine.
+        # Execute instantaneous hypervisor and network boundary quarantine
 
         start_time = time.time ()
         logger.warning (f"Initiating SOAR Zero-Touch Playbook on Target: {threat_ip}")
@@ -42,14 +42,14 @@ class SOARContainmentHandler:
 
     def generate_sigma_rule (self,cve_id: str,technique: str) -> str:
 
-        # Generate automated SIGMA detection rule for SIEM ingestion.
+        # Generate automated SIGMA detection rule for SIEM ingestion
 
         return f"""
-title: AegisAI Autonomous Detection - {cve_id}
+title: Aegis AI Autonomous Detection - {cve_id}
 id: 7f3a992e-54a8-4c8d-bf3e-aegis0923
 status: production
 description: Detects malicious intrusion attempts matching {technique}
-author: AegisAI ThreatLens Autonomous Engine
+author: Aegis AI Threat Analytics Platform Autonomous Engine
 logsource:
     category: firewall
     product: linux
