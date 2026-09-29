@@ -10,7 +10,7 @@ class Settings (BaseSettings):
     
     # Core Application Metadata
 
-    APP_NAME: str = "AegisAI ThreatLens"
+    APP_NAME: str = "Aegis AI"
     VERSION: str = "4.2.0"
     ENVIRONMENT: str = Field (default = "production",env = "AEGIS_ENV")
     DEBUG: bool = Field (default = False,env = "AEGIS_DEBUG")
