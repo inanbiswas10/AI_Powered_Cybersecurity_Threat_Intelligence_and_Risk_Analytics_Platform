@@ -1,5 +1,5 @@
 # AegisAI ThreatLens - Asynchronous Telemetry & CTI Feed Collector
-# Consumes CISA KEV, AlienVault OTX, NVD and GeoIP sources via aiohttp.
+# Consumes CISA KEV, AlienVault OTX, NVD and GeoIP sources via aiohttp
 
 import asyncio
 import logging
@@ -11,7 +11,7 @@ logger = logging.getLogger ("aegis.data_collector")
 
 class ThreatFeedCollector:
 
-    # Asynchronous orchestrator for high-throughput OSINT and SOC sensor ingress.
+    # Asynchronous orchestrator for high-throughput OSINT and SOC sensor ingress
 
     def __init__ (self):
         self.session: aiohttp.ClientSession | None = None
@@ -24,7 +24,7 @@ class ThreatFeedCollector:
 
     async def fetch_cisa_kev (self) -> List [Dict [str,Any]]:
 
-        # Fetch real-time Known Exploited Vulnerabilities catalog from CISA.
+        # Fetch real-time Known Exploited Vulnerabilities catalog from CISA
 
         session = await self.get_session ()
         try:
@@ -42,7 +42,7 @@ class ThreatFeedCollector:
 
     async def enrich_ioc_consensus (self,ioc_value: str) -> Dict [str,Any]:
 
-        # Query multi-vendor threat reputation score for IP or SHA-256 hash.
+        # Query multi-vendor threat reputation score for IP or SHA-256 hash
 
         await asyncio.sleep (0.05)
         return {
