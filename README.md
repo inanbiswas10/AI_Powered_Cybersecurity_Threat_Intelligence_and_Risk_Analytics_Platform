@@ -1,4 +1,4 @@
-# 🛡️ Aegis-AI Threat Analytics Platform v4.2
+# 🛡️ Aegis AI - Threat Analytics Platform
 
 ### Autonomous AI-Powered Cybersecurity Threat Intelligence & Risk Analytics Platform
 
@@ -21,7 +21,7 @@ Experience the live, autonomous threat intelligence command center running in re
 
 ## 📌 Executive Summary & Project Overview
 
-**Aegis-AI Threat Analytics Platform v4.2** is an enterprise grade, high-density Security Operations Center (SOC) intelligence dashboard and autonomous containment engine. Engineered entirely in modern, strictly type hinted **Python 3.11+**, it equips cyber defense analysts, incident responders and CISOs with real time wire packet inspection, unsupervised zero day anomaly triage, MITRE ATT&CK kill chain mapping, dynamic SIGMA rule generation and sub second SOAR response playbooks.
+**Aegis AI - Threat Analytics Platform** is an enterprise grade, high density Security Operations Center (SOC) intelligence dashboard and autonomous containment engine. Engineered entirely in modern, strictly type hinted **Python 3.11+**, it equips cyber defense analysts, incident responders and CISOs with real time wire packet inspection, unsupervised zero day anomaly triage, MITRE ATT&CK kill chain mapping, dynamic SIGMA rule generation and sub second SOAR response playbooks.
 
 Built specifically for high impact internship portfolio demonstrations, academic defenses and containerized deployment across **Streamlit Community Cloud**, **Docker** and cloud environments.
 
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-> 🌐 The Aegis-AI Threat Analytics Platform dashboard will automatically launch in your default browser at **`http://localhost:8501`**.
+> 🌐 The Aegis AI - Threat Analytics Platform dashboard will automatically launch in your default browser at **`http://localhost:8501`**.
 
 ---
 
@@ -160,7 +160,7 @@ Distributed under the **MIT Enterprise License**. Feel free to adapt and build u
 ## 👨‍💻 Author & SecOps Lead
 
 - **Developer**: **Inan Biswas**
-- **Internship**: **Elite Tech Intern**
-- **Domain**: **Predictive Machine Learning**
+- **Internship**: **Elite Tech Intern Data Analytics Internship (July 2026 - September 2026)**
+- **Domain**: **Predictive Machine Learning Track**
 - **Project Scope**: Autonomous AI-Powered Threat Intelligence & SOC Telemetry
 - **Portfolio & Profiles**: [GitHub](https://github.com/inanbiswas10) • [LinkedIn](https://www.linkedin.com/in/inanbiswas10)
