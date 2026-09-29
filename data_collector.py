@@ -1,4 +1,4 @@
-# AegisAI ThreatLens - Asynchronous Telemetry & CTI Feed Collector
+# Aegis AI - Threat Analytics Platform - Asynchronous Telemetry & CTI Feed Collector
 # Consumes CISA KEV, AlienVault OTX, NVD and GeoIP sources via aiohttp
 
 import asyncio
