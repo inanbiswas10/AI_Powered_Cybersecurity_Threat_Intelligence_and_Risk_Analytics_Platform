@@ -1,5 +1,5 @@
-# AegisAI ThreatLens v4.2 - Enterprise Autonomous SOC Intelligence Dashboard
-# High-density, interactive SecOps command center powered by Streamlit, Plotly and Machine Learning.
+# Aegis AI - Threat Analytics Platform - Enterprise Autonomous SOC Intelligence Dashboard
+# High-density, interactive SecOps command center powered by Streamlit, Plotly and Machine Learning
 
 import datetime
 import time
@@ -20,7 +20,7 @@ logger = setup_logger ("aegis.app")
 # Page Configuration for Ultra-Wide High-Density Display
 
 st.set_page_config (
-    page_title = "Aegis-AI Threat Analytics Platform",
+    page_title = "Aegis AI",
     page_icon = "🛡️",
     layout = "wide",
     initial_sidebar_state = "expanded"
@@ -163,7 +163,7 @@ def render_top_telemetry_bar ():
     <div class="hud-bar">
         <div style="display: flex; align-items: center; gap: 16px;">
             <span style="font-weight: 800; font-size: 18px; letter-spacing: -0.02em; color: #fff; display: flex; align-items: center; gap: 8px;">
-                <span style="color: #8b5cf6;">🛡️ AEGIS-AI THREAT ANALYTICS PLATFORM  <span style="font-size: 11px; background: #8b5cf6; color: #fff; padding: 2px 8px; border-radius: 4px;">v4.2 PRO </span>
+                <span style="color: #8b5cf6;">🛡️ AEGIS AI - THREAT ANALYTICS PLATFORM  <span style="font-size: 11px; background: #8b5cf6; color: #fff; padding: 2px 8px; border-radius: 4px;">v4.2 PRO </span>
             </span>
             <span class="status-badge badge-defended">● DEFCON 3 READY</span>
             <span class="hud-pill"><span style="color:#38bdf8;">SYNAPSE LINK:</span> 0.84 ms</span>
