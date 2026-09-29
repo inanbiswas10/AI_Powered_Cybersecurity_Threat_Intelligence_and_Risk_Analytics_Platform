@@ -1,12 +1,12 @@
-# AegisAI ThreatLens - Configuration & Environment Validation
-# Utilizes Pydantic V2 for cryptographic security, environment loading and zero-leak configuration.
+# Aegis AI - Threat Analytics Platform - Configuration & Environment Validation
+# Utilizes Pydantic V2 for cryptographic security, environment loading and zero-leak configuration
 
 from pydantic import Field
 from pydantic_settings import BaseSettings,SettingsConfigDict
 
 class Settings (BaseSettings):
 
-    # Production runtime settings with strict type hinting and validation.
+    # Production runtime settings with strict type hinting and validation
     
     # Core Application Metadata
 
